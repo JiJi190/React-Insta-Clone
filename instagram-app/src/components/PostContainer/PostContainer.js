@@ -5,7 +5,7 @@ class PostContainer extends Component {
     render() {
         return (
             <div className='post-container'>
-                {this.props.filteredPosts.length === o ? this.props.data.map(post => {
+                {this.props.filteredPosts.length === 0 ? this.props.data.map(post => {
                     return (
                         <>
 
@@ -56,3 +56,5 @@ class PostContainer extends Component {
         )
     }
 }
+
+export default PostContainer;
