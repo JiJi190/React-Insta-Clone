@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 
-export class searchbar extends Component {
+class SearchBar extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <input
+                name='search'
+                onChange={this.props.searchFilter}
+                placeholder='search...'
+                type="text"
+            />
         )
     }
 }
 
-export default searchbar
+export default SearchBar;
