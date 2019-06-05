@@ -16,6 +16,10 @@ class App extends React.Component {
     })
   }
 
+  addNewComment = e => {
+    e.preventDefault();
+  }
+
   componentDidMount(){
     this.setState({data: dummyData})
   }
